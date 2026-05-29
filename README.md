@@ -2,7 +2,7 @@
 
 Modern calculator with glassmorphism UI 
 
-**Live Demo:** https://calculator-shoaib.netlify.app
+**Live Demo:** https://shoaib-calculator-pro.netlify.app
 
 Features 
 - Full keyboard support: `Enter`, `Backspace`, `Esc`
