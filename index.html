@@ -2,40 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calculator Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Calculator Pro | Premium Glass Edition</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="calculator">
-    <div class="history" id="history"></div>
-    <input type="text" id="display" readonly placeholder="0">
-    <div class="buttons">
-        <button class="btn operator" data-value="CE">CE</button>
-        <button class="btn operator" data-value="DEL">DEL</button>
-        <button class="btn operator" data-value="%">%</button>
-        <button class="btn operator" data-value="/">÷</button>
-
-        <button class="btn" data-value="7">7</button>
-        <button class="btn" data-value="8">8</button>
-        <button class="btn" data-value="9">9</button>
-        <button class="btn operator" data-value="*">×</button>
-
-        <button class="btn" data-value="4">4</button>
-        <button class="btn" data-value="5">5</button>
-        <button class="btn" data-value="6">6</button>
-        <button class="btn operator" data-value="-">−</button>
-
-        <button class="btn" data-value="1">1</button>
-        <button class="btn" data-value="2">2</button>
-        <button class="btn" data-value="3">3</button>
-        <button class="btn operator" data-value="+">+</button>
-
-        <button class="btn zero" data-value="0">0</button>
-        <button class="btn" data-value=".">.</button>
-        <button class="btn equal" data-value="=">=</button>
+    <!-- TOP CENTER PROJECT TITLE -->
+    <div class="project-header">
+        <h1 class="glow-text">✨ my first project <span class="highlight">next calculator</span> ✨</h1>
+        <p class="badge">premium glass • smart evaluation • keyboard ready</p>
     </div>
-</div>
-<script src="script.js"></script>
+
+    <!-- CALCULATOR CORE -->
+    <div class="calculator">
+        <div class="history-panel" id="historyPanel">
+            <span id="historyExpr"></span>
+        </div>
+        <div class="display-wrapper">
+            <input type="text" id="display" readonly placeholder="0">
+        </div>
+        <div class="buttons-grid">
+            <!-- Row 1: utilities -->
+            <button class="btn btn-function" data-value="CE">CE</button>
+            <button class="btn btn-function" data-value="DEL">⌫</button>
+            <button class="btn btn-operator" data-value="%">%</button>
+            <button class="btn btn-operator" data-value="/">÷</button>
+
+            <!-- Row 2 -->
+            <button class="btn btn-number" data-value="7">7</button>
+            <button class="btn btn-number" data-value="8">8</button>
+            <button class="btn btn-number" data-value="9">9</button>
+            <button class="btn btn-operator" data-value="*">×</button>
+
+            <!-- Row 3 -->
+            <button class="btn btn-number" data-value="4">4</button>
+            <button class="btn btn-number" data-value="5">5</button>
+            <button class="btn btn-number" data-value="6">6</button>
+            <button class="btn btn-operator" data-value="-">−</button>
+
+            <!-- Row 4 -->
+            <button class="btn btn-number" data-value="1">1</button>
+            <button class="btn btn-number" data-value="2">2</button>
+            <button class="btn btn-number" data-value="3">3</button>
+            <button class="btn btn-operator" data-value="+">+</button>
+
+            <!-- Row 5 -->
+            <button class="btn btn-number zero-btn" data-value="0">0</button>
+            <button class="btn btn-number" data-value=".">.</button>
+            <button class="btn btn-equal" data-value="=">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
