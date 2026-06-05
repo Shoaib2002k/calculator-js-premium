@@ -27,7 +27,7 @@
             if (currentInput !== '' && !justEvaluated && !errorFlag) {
                 historySpan.textContent = currentInput;
             } else if (currentInput === '' && !errorFlag) {
-                historySpan.textContent = '✨ ready';
+                historySpan.textContent = '✨ Getready';
             }
         } else {
             historySpan.textContent = content;
